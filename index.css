@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    justify-content: center;
+}
+
+/* TOPO */
+.topo {
+    background: #a9a3d8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo .way {
+    color: #ff6b6b;
+}
+
+.search {
+    width: 300px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+.acoes .btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.destaque {
+    background: #7b6df0;
+    color: white;
+}
+
+/* BANNER */
+.banner img {
+    width: 80%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-left: 10%;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.cards {
+    width: 50%;
+    background: hsl(246, 100%, 92%);
+    border-radius: 2%;
+    padding: 8px 15px;
+    margin-left: 10%;
+}
+
+.lado {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    background: #dcd9f3;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    background: #bbb;
+    border-radius: 50%;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.tags span {
+    background: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+/* BOTÃO */
+.apply {
+    margin-top: 5px;
+    background: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* LADO DIREITO */
+.logo-grande {
+    text-align: center;
+    opacity: 0.6;
+}
+
+.logo-grande h1 span {
+    color: #ff6b6b;
+}
+
+.botao{
+
+    
+}
