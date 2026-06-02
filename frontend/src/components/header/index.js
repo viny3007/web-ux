@@ -1,3 +1,1 @@
-export { HeaderComponent as Header
-} from './header.js';
-
+export { HeaderComponent as Header } from './header.js';
