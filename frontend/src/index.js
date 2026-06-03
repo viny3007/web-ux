@@ -9,3 +9,16 @@ customElements.define('app-header', Header);
 customElements.define('page-home', Home);
 
 console.log('App initialized and components registered.');
+
+
+import { Header } from './components/header/index.js';
+
+
+// Central Registration of Web Components
+customElements.define('app-headerusu', Header);
+
+
+// Pages
+customElements.define('page-home', Home);
+
+console.log('App initialized and components registered.');
