@@ -1,9 +1,23 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f3f3f3;
     justify-content: center;
+    
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    opacity: 0.08;
+    z-index: -1;
+    pointer-events: none;
+}
+ 
 
 /* TOPO */
 .topo {
