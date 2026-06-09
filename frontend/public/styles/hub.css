@@ -1,0 +1,29 @@
+/* BACKGROUND LOGO INDEX*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('../../src/img/PESSOAS_ESTUDANDO.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .3;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(98, 82, 179, 0.5); /* Roxo */
+    z-index: -1;
+    pointer-events: none;
+}
