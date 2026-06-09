@@ -19,11 +19,105 @@ body::before {
     pointer-events: none;
 }
  
+.conteudo{
+    max-width: 1400px;
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
 
+.lista-vagas{
+    flex: 2;
+}
+
+.perfil-card{
+    width: 350px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    margin-left: 20px;
+    position: fixed;
+    margin-left: 62%;
+    top: 350px;
+    
+}
+
+.perfil-banner{
+    height: 90px;
+    background: linear-gradient(
+        135deg,
+        #5f5cff,
+        #8b87ff
+    );
+}
+
+.perfil-foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -45px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.perfil-info{
+    padding: 15px 20px;
+}
+
+.perfil-info h2{
+    margin: 0;
+    color: #222;
+}
+
+.perfil-info p{
+    color: #555;
+    margin: 10px 0;
+}
+
+.perfil-info span{
+    color: #888;
+}
+
+.perfil-status{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.status-item{
+    text-align: center;
+}
+
+.status-item strong{
+    display: block;
+    color: #5f5cff;
+    font-size: 22px;
+}
+
+.status-item span{
+    font-size: 13px;
+    color: #666;
+}
+
+.btn-perfil{
+    width: calc(100% - 40px);
+    margin: 20px;
+    border: none;
+    background: #5f5cff;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
 .container-vagas{
     max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
+    margin-left: 11%;
     display: flex;
 }
 
@@ -136,6 +230,8 @@ body::before {
     margin-left: 10%;
     padding: 10px 20px;
     border-radius: 8px;
+    margin-top: 7%;
+
 }
 
 .logo {
@@ -157,6 +253,7 @@ body::before {
     justify-content:center;
     align-items:flex-end;
     padding-bottom:10px;
+    position: fixed;
 }
 
 .menu-container{
