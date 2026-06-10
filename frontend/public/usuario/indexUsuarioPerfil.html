@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aba Perfil do Usuário</title>
     <link rel="stylesheet" href="../../public/styles/usuario.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="header">
@@ -32,42 +33,45 @@
     </div>
 </header>
 
-    <!-- quadrado do perfil -->
-     <div class="quadrado-perfil"></div>
+<div class="perfil-container">
 
-    <!-- quadrado do fundo do perfil -->
-    <div class="quadrado-fundo-perfil"></div>
+  <div class="quadrado-perfil">
 
-    <!-- Ícone de perfil -->
-    <button class="foto-perfil">
-        <i class="bi bi-person-circle"></i>
-    </button>
-
-    <!-- Icone fundo do perfil-->
-    <button class="fundo-perfil">
+    <!-- fundo roxo -->
+    <div class="quadrado-fundo-perfil">
+      <button class="foto-fundo-perfil">
         <i class="bi bi-camera-fill"></i>
+      </button>
+    </div>
+
+    <!-- foto de perfil -->
+    <button class="foto-perfil">
+      <i class="bi bi-person-fill"></i>
     </button>
 
-    <!-- Nome do perfil -->
+    <!-- informações -->
     <div class="nome-perfil">Estudante</div>
 
-    <!-- Preferências do perfil -->
-    <div class="preferencias-perfil">Preferências</div>
+    <div class="preferencias-perfil">Preferências:
+        <h1>Possibilidade de efetivação</h1>
+        <h2>Desconto em Produtos</h2>
+        <h3>Vale-transporte</h3>
+        <h4>Vale-refeição/alimentação</h4>
+    </div>
 
-    <!-- Informações do perfil -->
     <div class="informacoes-perfil">Informações sobre Você:</div>
 
-    <!-- Editar perfil -->
     <div class="editar-perfil">Editar Perfil</div>
 
-    <!-- Experiências do perfil -->
     <div class="experiencia-perfil">Experiências:</div>
 
-    <!-- Empresa 1 -->
     <div class="empresa-1">Empresa 1</div>
 
-    <!-- Empresa 2 -->
     <div class="empresa-2">Empresa 2</div>
+
+  </div>
+
+</div>
 
 </body>
 </html>

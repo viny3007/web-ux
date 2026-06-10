@@ -9,6 +9,35 @@ body, html {
     height: 100%;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('../../src/img/PESSOAS_ESTUDANDO.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .3;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(98, 82, 179, 0.5); /* Roxo */
+    z-index: -1;
+    pointer-events: none;
+}
+
 /* Fundo com imagem */
 .background {
     position: fixed;
@@ -93,8 +122,9 @@ body, html {
     gap: 10px;
 }
 
-.social-login button {
+.social-login a {
     width: 260px;
+    text-align: center;
     padding: 10px;
     border-radius: 25px;
     border: none;
@@ -105,7 +135,7 @@ body, html {
     transition: 0.3s;
 }
 
-.social-login button:hover {
+.social-login a:hover {
     transform: translateY(-2px);
 }
 
@@ -117,6 +147,6 @@ body, html {
 }
 
 /* Cores específicas */
-.google { border-left: 5px solid #db4437; }
-.microsoft { border-left: 5px solid #00a4ef; }
-.apple { border-left: 5px solid #000; }
+.google { border-left: 5px solid #db4437; text-decoration: none;}
+.microsoft { border-left: 5px solid #00a4ef; text-decoration: none;}
+.apple { border-left: 5px solid #000; text-decoration: none;}
