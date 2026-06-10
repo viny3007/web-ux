@@ -331,16 +331,17 @@ body::before {
   flex-direction: column;
   align-items: flex-start;
   width: 704px;
-  margin: 20px auto;
+  margin: 0px auto;
   margin-left: 455px;
 }
 
 .quadrado-perfil {
   width: 704px;
-  height: 560px;
+  height: 600px;
   background-color: #ffffff;
   border-radius: 10px;
   position: relative;
+  margin-top: 20%;
   /* tire o margin-left e o margin: 20px auto daqui */
 }
 
@@ -459,10 +460,31 @@ h4 {
 }
 
 .informacoes-perfil {
-  margin-top: 25px;
-  margin-left: 3%;
-  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 2%;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.5px;
+  background-color: #c4c1e6a9;
+  border-radius: 10px;
+  width: 320px;
+  height: 150px;
+  padding: 13px;
   color: #000000;
+  font-weight: bold;
+}
+
+.editar-perfil {
+  margin-top: -349px;
+  margin-left: 80%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  background-color: #6c63ff;
+  padding: 8px;
+  border-radius: 8px;
+  width: 86px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
