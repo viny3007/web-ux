@@ -1,0 +1,83 @@
+/* BACKGROUND LOGO INDEX*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('../../src/img/PESSOAS_ESTUDANDO.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .3;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(98, 82, 179, 0.7); /* Roxo */
+    z-index: -1;
+    pointer-events: none;
+}
+
+.Logo {
+    background-color: white;
+    background-image: url('../../src/img/logo2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    width: 100%;
+    height: 90px;
+    margin: 90px auto;
+}
+
+.Cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 14%;
+}
+
+.Op1, .Op2, .Op3 {
+    background-color: white;
+    color: rgba(46, 15, 202, 0.849); /* Roxo */;
+    width: 400px;
+    height: 250px;
+    margin: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.Imgs {
+    position: fixed;
+    margin-left: 13%;
+    margin-top: 8%;
+    
+}
+
+.Imgs2 {
+    position: fixed;
+    margin-left: 38%;
+    margin-top: 8%;
+    
+}
+
+.Imgs3 {
+    position: fixed;
+    margin-left: 62%;
+    margin-top: 8%;
+}
+
