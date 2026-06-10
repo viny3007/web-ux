@@ -44,6 +44,7 @@ body::before {
     
 }
 
+
 .perfil-banner{
     height: 90px;
     background: linear-gradient(
@@ -89,6 +90,8 @@ body::before {
     border-bottom: 1px solid #eee;
 }
 
+
+
 .status-item{
     text-align: center;
 }
@@ -115,15 +118,19 @@ body::before {
     cursor: pointer;
     font-weight: 600;
 }
+
 .container-vagas{
-    max-width: 700px;
+    width: 700px;
     margin-left: 11%;
+    margin-right: 20%;
     display: flex;
 }
 
 .lista-vagas{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(380px,1fr));
+    margin-right: 20%;
+    margin-left: 1%;
     gap: 25px;
 }
 
@@ -228,6 +235,7 @@ body::before {
     max-height: 200px;
     object-fit: cover;
     margin-left: 10%;
+    margin-right: 10%;
     padding: 10px 20px;
     border-radius: 8px;
     margin-top: 7%;
@@ -257,7 +265,7 @@ body::before {
 }
 
 .menu-container{
-    width:950px;
+    width:50%;
     height:68px;
     background:#fff;
     border-radius:18px;
