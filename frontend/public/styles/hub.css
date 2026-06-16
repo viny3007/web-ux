@@ -48,6 +48,7 @@ body::after {
 .Op1, .Op2, .Op3 {
     background-color: white;
     color: rgba(46, 15, 202, 0.849); /* Roxo */;
+    text-decoration: none;
     width: 400px;
     height: 250px;
     margin: 20px ;

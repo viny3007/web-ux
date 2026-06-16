@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Grad</title>
+    <title>Login Grad</title>
+    <link rel="stylesheet" href="../../public/styles/usuario/loginUsuario.css">
 </head>
 <body>
 
+<div class="background">
+    <div class="overlay"></div>
+</div>
+
+<div class="login-container">
+    <div class="login-box">
+        <img src="../../src/img/logo.png" alt="GRAD" class="logo">
+
+        <input type="email" placeholder="E-mail">
+        <input type="password" placeholder="Senha">
+
+        <a href="../usuario/cadastro.html" class="register">Cadastre-se agora!</a>
+
+        <button class="btn-primary" onclick="window.location.href='../usuario/inicio.html'">Entrar</button>
+    </div>
+
+    <div class="social-login">
+        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1372012084%3A1775692570434677&hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AT1y2_XBPWvj26ZLYzAmO1_-GSX6QUGIUobwyp_FcosQ1IDu_YOTyGa-hL6x1W88_Iyl52zjWYOU2Q" class="google" target="_blank">Continue com o Google</a>
+        <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL%20openid%20profile%20offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=989747e7-4dab-46fc-8f24-7e80eecac95f&x-client-SKU=MSAL.Desktop&x-client-Ver=4.79.2.0&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXB3aJCMAAA4Hfp1kXy32XOjBJjB2V32dFo_hITT3--b7e4eaKPj94gldRROqUwKM-Qmi0aEEeOndV2AZlL-swtPMEtn7bTgJNB2WqzmWS1AX1PIkfi9dt9nhSTNeYTFokatfO8tCj1Lh_bS2zBrgGWI4OvMXbGIPrNtRNEm1QcPnMf2lUR35HCfad3-bsnPvvZDwfLuAi10sbRg4dCgClUwPFBYCADbJBBIxqezk2ADB2EzMbM8uUsuZb0yMVNBimODEFj6dVTsPokWPa1nHr4L-y2JUXNt6jvTr6JVm2EHn_pB0SlDeMU6Zy5vH5ZXjN3RoYZMiuIrK5YyxWh6jQ9byjNl3BWTCSkxQW7f_vOX7RCAQAA&msaoauth2=true&instance_aware=true&lc=1046&sso_reload=true" class="microsoft" target="_blank">Continue com a Microsoft</a>
+        <a href="https://account.apple.com/sign-in" class="apple" target="_blank">Continue com a Apple</a>
+    </div>
+</div>
 
 </body>
 </html>

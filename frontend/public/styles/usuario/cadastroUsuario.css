@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:450px;
+}
+
+.logo{
+    width:160px;
+    display:block;
+    margin:0 auto 20px;
+}
+
+h3{
+    text-align:center;
+    color:#9c9af7;
+    font-size:14px;
+}
+
+p{
+    text-align:center;
+    color:#9c9af7;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.upload{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:42px;
+    border-radius:25px;
+    background:#6659f7;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.upload:hover{
+    opacity:.9;
+}
+
+.upload input{
+    display:none;
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:12px;
+    flex:1;
+}
+
+.campo label{
+    color:#9c9af7;
+    font-size:10px;
+    margin-bottom:4px;
+}
+
+.campo input,
+.campo select{
+    height:35px;
+    border:1px solid #7d74ff;
+    border-radius:20px;
+    padding:0 12px;
+    background:white;
+}
+
+.campo input:focus,
+.campo select:focus,
+.pesquisa:focus{
+    outline:none;
+    border-color:#6659f7;
+    box-shadow:0 0 0 3px rgba(102,89,247,.15);
+}
+
+.linha{
+    display:flex;
+    gap:10px;
+}
+
+.endereco{
+    flex:4;
+}
+
+.numero{
+    flex:1;
+}
+
+.competencias{
+    margin-top:10px;
+}
+
+.competencias h4{
+    color:#9c9af7;
+    margin-bottom:10px;
+}
+
+.pesquisa{
+    width:100%;
+    height:35px;
+    border:1px solid #7d74ff;
+    border-radius:20px;
+    padding:0 15px;
+}
+
+.tags{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+.tags button{
+    border:none;
+    border-radius:20px;
+    background:#6659f7;
+    color:white;
+    padding:5px 15px;
+    cursor:pointer;
+    font-size:11px;
+}
+
+.tags button:hover{
+    opacity:.9;
+}
+
+.btn-finalizar{
+    width:100%;
+    height:42px;
+    border-radius:25px;
+    border:1px solid #6659f7;
+    background:white;
+    color:#6659f7;
+    font-weight:700;
+    margin-top:25px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-finalizar:hover{
+    background:#6659f7;
+    color:white;
+}
+
+.voltar{
+    position:absolute;
+    top:20px;
+    left:25px;
+    text-decoration:none;
+    font-size:40px;
+    color:#6659f7;
+}
+
+@media(max-width:600px){
+
+    .linha{
+        flex-direction:column;
+        gap:0;
+    }
+
+    .container{
+        max-width:100%;
+    }
+
+}
