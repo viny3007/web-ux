@@ -39,15 +39,21 @@
 
     <!-- fundo roxo -->
     <div class="quadrado-fundo-perfil">
-      <button class="foto-fundo-perfil">
+      <input type="file" id="inputFundo" accept="image/*" style="display:none">
+      <label for="inputFundo" class="foto-fundo-perfil">
         <i class="bi bi-camera-fill"></i>
-      </button>
+      </label>
     </div>
 
     <!-- foto de perfil -->
     <button class="foto-perfil">
       <i class="bi bi-person-fill"></i>
     </button>
+
+    <!-- editar foto de perfil -->
+    <label for="inputFoto" class="edit-foto-perfil">
+      <i class="bi bi-camera-fill"></i>
+    </label>
 
     <!-- informações -->
     <div class="nome-perfil">Estudante</div>
