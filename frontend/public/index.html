@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>GradWay</title>
-    <link rel="stylesheet" href="../src/styles/index.css">
+    <link rel="stylesheet" href="../public/styles/index.css">
 
 
     <script type="module" src="../src/index.js"></script>
 
 </head>
 <body>
-    <app-header></app-header>
+    <header>
+        <div class="menu-container">
+
+            <div class="logo">
+                <img src="../../src/img/logo.png" alt="">
+            </div>
+
+            <nav class="menu">
+                <a href="index.html" class="active">Vagas</a>
+                <a href="hub.html">Rede</a>
+            </nav>
+
+            <div class="acoes">
+                <button class="btn-add">
+                    +
+                </button>
+
+                <a href="#" class="perfil">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+
+        </div>
+    </header>
 
     <page-home></page-home>
 
