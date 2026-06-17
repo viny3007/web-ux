@@ -1,9 +1,11 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     justify-content: center;
     background: #f5f7fb;
+    margin: 0;
 }
 
 body::before {
@@ -108,6 +110,7 @@ body::before {
     font-size: 13px;
     color: #666;
 }
+
 .btn-perfil{
     width: calc(100% - 40px);
     margin: 20px;
@@ -255,14 +258,17 @@ body::before {
 }
 
 .header{
-    width:100%;
-    height:105px;
-    background:#b7b0e8;
-    display:flex;
-    justify-content:center;
-    align-items:flex-end;
-    padding-bottom:10px;
+    width: 100%;
+    height: 105px;
+    background: #b7b0e8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .menu-container{
@@ -325,6 +331,184 @@ body::before {
     font-size:30px;
 }
 
+
+.redesFeed{
+    max-width: 700px;
+    margin: 0 auto; /* centraliza na tela */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redesPost1{
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 17%;
+}
+
+.redesPost{
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 0;
+}
+
+.redesCabecalho{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    
+}
+
+.redesFotoPerfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.redesInfoUsuario{
+    display: flex;
+    flex-direction: column;
+}
+
+.redesNome{
+    margin: 0;
+    font-size: 16px;
+}
+
+.redesTempo{
+    margin: 0;
+    color: gray;
+    font-size: 13px;
+}
+
+.redesConteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redesTexto{
+    margin: 0;
+    line-height: 1.5;
+}
+
+.redesImagem{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.redesAcoes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.redesBotao{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.redesBotao:hover{
+    background-color: #f0f2f5;
+}
+
+.sidebar-perfil{
+    width: 320px;
+    margin-left: 40%;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    position: fixed;
+    top: 120px;
+}
+
+/* Banner */
+.sidebar-perfil__banner{
+    height: 90px;
+    background: linear-gradient(135deg, #5f5cff, #8b87ff);
+}
+
+/* Foto */
+.sidebar-perfil__foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: -45px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+/* Info */
+.sidebar-perfil__info{
+    padding: 15px 20px;
+}
+
+.sidebar-perfil__info h2{
+    margin: 0;
+    color: #222;
+}
+
+.sidebar-perfil__info p{
+    color: #555;
+    margin: 10px 0;
+}
+
+.sidebar-perfil__info span{
+    color: #888;
+}
+
+/* Status */
+.sidebar-perfil__status{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-perfil__status-item{
+    text-align: center;
+}
+
+.sidebar-perfil__status-item strong{
+    display: block;
+    color: #5f5cff;
+    font-size: 18px;
+}
+
+.sidebar-perfil__status-item span{
+    font-size: 13px;
+    color: #666;
+}
+
+/* Botão */
+.sidebar-perfil__btn{
+    width: calc(100% - 40px);
+    margin: 20px;
+    border: none;
+    background: #5f5cff;
+    color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
 /*===============================Usuário Perfil=================================*/
 
 .perfil-container {
