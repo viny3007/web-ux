@@ -121,7 +121,7 @@ body::before {
 
 .container-vagas{
     width: 700px;
-    margin-left: 16%;
+    margin-left: 5%;
     margin-right: 20%;
     display: flex;
 }
@@ -756,15 +756,13 @@ h1 {
 }
 
 h2 {
-  margin-top: -38px;
-  margin-left: 25%;
-  font-size: 12px;
+
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.1px;
-  background-color: #c4c1e6a9;
   padding: 8px;
   border-radius: 15px;
-  width: 134px;
+  width: 250px;
   color: #000000;
 } 
 
