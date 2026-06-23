@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Graduando</title>
+    <link rel="stylesheet" href="../../public/styles/empresa/cadastroEmpresa.css">
+</head>
+<body>
+
+    <a href="../hub.html" class="voltar">←</a>
+
+    <div class="container">
+
+        <img src="../../src/img/logo.png" alt="Gradway" class="logo">
+
+        <h3>Preenchimento Inteligente:</h3>
+        <p>Carregar Currículo</p>
+
+        <label class="upload">
+            <input type="file">
+            ⤴
+        </label>
+
+            <form>
+
+                <div class="campo">
+                    <label>Nome da Empresa</label>
+                    <input type="text">
+                </div>
+
+                <div class="campo">
+                    <label>E-mail do Responsável</label>
+                    <input type="email">
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label>CNPJ</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="campo">
+                        <label>Quantidade de Vagas</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label>Telefone 1</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="campo">
+                        <label>Telefone 2</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo endereco">
+                        <label>Endereço Comercial</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="campo numero">
+                        <label>Número</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo endereco">
+                        <label>Cidade</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="campo numero">
+                        <label>UF</label>
+                        <input type="text" maxlength="2">
+                    </div>
+                </div>
+
+                <div class="area-academica">
+
+                    <h4>Áreas de Interesse</h4>
+
+                    <div class="pesquisa-wrapper">
+                        <span class="icone">🔍</span>
+                        <input
+                            type="text"
+                            class="pesquisa"
+                            placeholder="Pesquisar área..."
+                        >
+                    </div>
+
+                    <div class="tags">
+                        <button type="button">Tecnologia</button>
+                        <button type="button">Engenharia</button>
+                        <button type="button">Administrativo</button>
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="btn-finalizar"
+                    onclick="window.location.href='../empresa/inicio.html'">
+
+                    FINALIZAR
+
+                </button>
+
+            </form>
+
+    </div>
+
+</body>
+</html>

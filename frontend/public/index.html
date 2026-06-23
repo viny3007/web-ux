@@ -10,97 +10,193 @@
 
 </head>
 <body>
-    <header>
-        <div class="menu-container">
+ 
+<header class="header">
+    <div class="menu-container">
 
-            <div class="logo">
-                <img src="../../src/img/logo.png" alt="">
-            </div>
-
-            <nav class="menu">
-                <a href="index.html" class="active">Vagas</a>
-                <a href="hub.html">Rede</a>
-            </nav>
-
-            <div class="acoes">
-                <button class="btn-add">
-                    +
-                </button>
-
-                <a href="#" class="perfil">
-                    <i class="fas fa-user"></i>
-                </a>
-            </div>
-
+        <div class="logo">
+            <img src="../../src/img/logo.png" alt="">
         </div>
-    </header>
 
-    <page-home></page-home>
+        <nav class="menu">
+            <a href="#" class="active">Vagas</a>
+            <a href="hub.html">Rede</a>
+        </nav>
 
-    <app-footer></app-footer>
+        <div class="acoes">
+            <button class="btn-add" onclick="window.location.href='hub.html'">
+                +
+            </button>
 
-    <div class="banner">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="banner">
+            <a href="#" class="perfil">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+    </div>
+</header>
+
+<div class="banner">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="banner">
+</div>
+
+    <main class="container-vagas">
+
+    <section class="lista-vagas">
+
+        <div class="vaga-card">
+            <div class="vaga-topo">
+
+                <div class="empresa-info">
+                    <img src="https://api.dicebear.com/9.x/initials/svg?seed=Pichau" alt="Empresa">
+
+                    <div>
+                        <span class="tag-curso">Estágio em Desenvolvimento Front-End</span>
+                        <p>Pichau • Joinville, SC</p>
+                    </div>
+                </div>
+
+                <button class="favorito" onclick="window.location.href='hub.html'">☆</button>
+
+            </div>
+
+            <div class="beneficios">
+                <span>Efetivação</span>
+                <span>Vale Transporte</span>
+                <span>Vale Refeição</span>
+                <span>Desconto em Produtos</span>
+            </div>
+
+            <button class="btn-candidatar" onclick="window.location.href='hub.html'">
+                Candidatar-se
+            </button>
+        </div>
+
+        <div class="vaga-card">
+            <div class="vaga-topo">
+
+                <div class="empresa-info">
+                    <img src="https://api.dicebear.com/9.x/initials/svg?seed=Pichau" alt="Empresa">
+
+                    <div>
+                        <span class="tag-curso">Estágio em Desenvolvimento Front-End</span>
+                        <p>Pichau • Joinville, SC</p>
+                    </div>
+                </div>
+
+                <button class="favorito" onclick="window.location.href='hub.html'">☆</button>
+
+            </div>
+
+            <div class="beneficios">
+                <span>Efetivação</span>
+                <span>Vale Transporte</span>
+                <span>Vale Refeição</span>
+                <span>Desconto em Produtos</span>
+            </div>
+
+            <button class="btn-candidatar" onclick="window.location.href='hub.html'">
+                Candidatar-se
+            </button>
+        </div>
+
+        <div class="vaga-card">
+            <div class="vaga-topo">
+
+                <div class="empresa-info">
+                    <img src="https://api.dicebear.com/9.x/shapes/svg?seed=empresa1" alt="Empresa">
+
+                    <div>
+                        <span class="tag-curso">Estágio em Desenvolvimento Front-End</span>
+                        <p>Pichau • Joinville, SC</p>
+                    </div>
+                </div>
+
+                <button class="favorito" onclick="window.location.href='hub.html'">☆</button>
+
+            </div>
+
+            <div class="beneficios">
+                <span>Efetivação</span>
+                <span>Vale Transporte</span>
+                <span>Vale Refeição</span>
+                <span>Desconto em Produtos</span>
+            </div>
+
+            <button class="btn-candidatar" onclick="window.location.href='hub.html'">
+                Candidatar-se
+            </button>
+        </div>
+
+        <div class="vaga-card">
+            <div class="vaga-topo">
+
+                <div class="empresa-info">
+                    <img src="https://api.dicebear.com/9.x/initials/svg?seed=Pichau" alt="Empresa">
+
+                    <div>
+                        <span class="tag-curso">Estágio em Desenvolvimento Front-End</span>
+                        <p>Pichau • Joinville, SC</p>
+                    </div>
+                </div>
+
+                <button class="favorito" onclick="window.location.href='hub.html'">☆</button>
+
+            </div>
+
+            <div class="beneficios">
+                <span>Efetivação</span>
+                <span>Vale Transporte</span>
+                <span>Vale Refeição</span>
+                <span>Desconto em Produtos</span>
+            </div>
+
+            <button class="btn-candidatar" onclick="window.location.href='hub.html'">
+                Candidatar-se
+            </button>
+        </div>
     </section>
-
-
-
-
-<main class="container">
-   <div class="cards">
-
-
-         
-        <div class="card">
-            <div class="perfil"></div>
-            <div class="info">
-                <h3>Estágio em Desenvolvimento Front-End</h3>
-                <p>Pichau | Joinville, SC</p>
-
-                <div class="tags">
-                    <span>Possibilidade de efetivação</span>
-                    <span>Desconto em Produtos</span>
-                    <span>Vale-transporte</span>
-                    <span>Vale-refeição/alimentação</span>
-                </div>
-
-                <button class="apply">Candidate-se facilmente ➤</button>
-            </div>
+    <aside class="perfil-card">
+        <div class="perfil-banner"></div>
+            <img
+                src="..\src\img\perfilDefault.svg"
+                class="perfil-foto"
+                alt="Perfil">
+        <div class="perfil-info">
+            <h2>Seu Perfil</h2>
+            <p>
+                Sua Formação
+            </p>
+            <span>-----, --</span>
         </div>
 
-        <div class="card">
-            <div class="perfil"></div>
-            <div class="info">
-                <h3>Estágio em Desenvolvimento Front-End</h3>
-                <p>Pichau | Joinville, SC</p>
-                <div class="tags">
-                    <span>Possibilidade de efetivação</span>
-                    <span>Desconto em Produtos</span>
-                    <span>Vale-transporte</span>
-                </div>
-                <button class="apply">Candidate-se facilmente ➤</button>
+        <div class="perfil-status">
+
+            <div class="status-item">
+                <strong>--%</strong>
+                <span>Perfil Completo</span>
             </div>
+
+            <div class="status-item">
+                <strong>--</strong>
+                <span>Candidaturas</span>
+            </div>
+
+            <div class="status-item">
+                <strong>--</strong>
+                <span>Vagas Salvas</span>
+            </div>
+
         </div>
 
-        <div class="card">
-            <div class="perfil"></div>
-            <div class="info">
-                <h3>Estágio em Desenvolvimento Front-End</h3>
-                <p>Pichau | Joinville, SC</p>
-                <div class="tags">
-                    <span>Possibilidade de efetivação</span>
-                    <span>Vale-refeição</span>
-                </div>
-                <button class="apply">Candidate-se facilmente ➤</button>
-            </div>
-        </div>
+        <button class="btn-perfil">
+            Ver Perfil Completo
+        </button>
 
-    </div>
+    </aside>
 
-    <div class="lado">
+</main>    
 
-    </div>
-</main> 
 
 </body>
 </html>
