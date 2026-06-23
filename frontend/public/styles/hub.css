@@ -39,12 +39,6 @@ body::after {
     margin: 90px auto;
 }
 
-.Cards {
-    display: flex;
-    justify-content: center;
-    margin-top: 14%;
-}
-
 .Op1, .Op2, .Op3 {
     background-color: white;
     color: rgba(46, 15, 202, 0.849); /* Roxo */;
@@ -62,23 +56,85 @@ body::after {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.Imgs {
-    position: fixed;
-    margin-left: 13%;
-    margin-top: 8%;
-    
+.Cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding: 20px;
 }
 
-.Imgs2 {
-    position: fixed;
-    margin-left: 38%;
-    margin-top: 8%;
-    
+.Op1,
+.Op2,
+.Op3 {
+    position: relative;
+    background-color: white;
+    color: rgba(46, 15, 202, 0.849);
+    text-decoration: none;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: visible;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.Imgs3 {
-    position: fixed;
-    margin-left: 62%;
-    margin-top: 8%;
+.Op1:hover,
+.Op2:hover,
+.Op3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
 }
 
+.card-icon {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .Op1,
+    .Op2,
+    .Op3 {
+        width: 300px;
+        height: 220px;
+    }
+
+    .card-icon {
+        width: 100px;
+        top: -30px;
+        left: -30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Op1,
+    .Op2,
+    .Op3 {
+        width: 90%;
+        max-width: 400px;
+        height: 180px;
+        font-size: 1.5rem;
+    }
+
+    .card-icon {
+        width: 80px;
+        top: -20px;
+        left: -20px;
+    }
+}
