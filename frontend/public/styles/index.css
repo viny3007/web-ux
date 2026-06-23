@@ -383,7 +383,7 @@ body::before {
 }
 
 .logo img {
-    height: 50px; /* ajuste conforme necessário */
+    height: 50px;
     width: auto;
     display: block;
 }
