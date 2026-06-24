@@ -540,6 +540,8 @@ body::before {
   left: 0;
 }
 
+/*===============================Foto de Perfil=================================*/
+
 .foto-perfil {
   width: 110px;
   height: 110px;
@@ -575,6 +577,8 @@ body::before {
   cursor: pointer
 }
 
+/*===============================Foto de Fundo=================================*/
+
 .foto-fundo-perfil {
   width: 40px;
   height: 40px;
@@ -592,6 +596,8 @@ body::before {
   border: 2px solid #000000;
   cursor: pointer
 }
+
+/*===============================Informações do Perfil=================================*/
 
 .nome-perfil {
   margin-top: 185px;
@@ -692,6 +698,8 @@ h4 {
   border: none;
   cursor: pointer;
 }
+
+/*===============================Experiência do Perfil=================================*/
 
 .experiencia-perfil {
   margin-top: 10px;
