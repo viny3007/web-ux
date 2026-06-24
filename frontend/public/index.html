@@ -189,7 +189,7 @@
 
         </div>
 
-        <button class="btn-perfil">
+        <button class="btn-perfil" onclick="window.location.href='hub.html'">
             Ver Perfil Completo
         </button>
 
@@ -198,5 +198,161 @@
 </main>    
 
 
+<!-- POPUP MENU -->
+<div class="popup-menu" id="popupMenu">
+    <button class="popup-item">
+        ➕ Nova Publicação
+    </button>
+
+    <button class="popup-item">
+        ✏️ Atualizar Currículo
+    </button>
+
+    <button class="popup-item">
+        📄 Adicionar Certificado
+    </button>
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- MODAL -->
+<div class="modal" id="modalVaga">
+    <div class="modal-content">
+        
+        <button class="close-modal" id="closeModal">×</button>
+
+        <div class="modal-header">
+            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Pichau" alt="Empresa">
+            
+            <div>
+                <h2>Estágio em Desenvolvimento Front-End</h2>
+                <p>Pichau • Joinville, SC</p>
+            </div>
+        </div>
+
+        <div class="modal-body">
+            <h3>Benefícios</h3>
+            <ul>
+                <li>Efetivação</li>
+                <li>Vale Transporte</li>
+                <li>Vale Refeição</li>
+                <li>Desconto em Produtos</li>
+            </ul>
+
+            <p>
+                Aqui você pode colocar uma descrição maior da vaga, requisitos e informações adicionais.
+            </p>
+        </div>
+
+        <button class="btn-candidatar-modal" onclick="window.location.href='hub.html'">
+            Candidatar-se
+        </button>
+
+    </div>
+</div>
+
+<!-- POPUP MENU -->
+<div class="popup-menu" id="popupMenu">
+    <button class="popup-item">
+        ➕ Nova Publicação
+    </button>
+
+    <button class="popup-item">
+        ✏️ Atualizar Currículo
+    </button>
+
+    <button class="popup-item">
+        📄 Adicionar Certificado
+    </button>
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- MODAL -->
+<div class="modal" id="modalVaga">
+    <div class="modal-content">
+        
+        <button class="close-modal" id="closeModal">×</button>
+
+        <div class="modal-header">
+            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Pichau" alt="Empresa">
+            
+            <div>
+                <h2>Estágio em Desenvolvimento Front-End</h2>
+                <p>Pichau • Joinville, SC</p>
+            </div>
+        </div>
+
+        <div class="modal-body">
+            <h3>Benefícios</h3>
+            <ul>
+                <li>Efetivação</li>
+                <li>Vale Transporte</li>
+                <li>Vale Refeição</li>
+                <li>Desconto em Produtos</li>
+            </ul>
+
+            <p>
+                Aqui você pode colocar uma descrição maior da vaga, requisitos e informações adicionais.
+            </p>
+        </div>
+
+        <button class="btn-candidatar-modal" onclick="window.location.href='hub.html'">
+            Candidatar-se
+        </button>
+
+    </div>
+</div>
 </body>
+
+
+<script>
+const btnAdd = document.getElementById("btnAdd");
+const popup = document.getElementById("popupMenu");
+
+// abre/fecha popup
+btnAdd.addEventListener("click", (e) => {
+    e.stopPropagation();
+    popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+});
+
+// fecha ao clicar fora
+document.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+
+
+</script>
+
+<script>
+const modal = document.getElementById('modalVaga');
+const overlay = document.getElementById('overlay');
+const closeModal = document.getElementById('closeModal');
+
+function openModal() {
+    modal.classList.add('active');
+    overlay.classList.add('active');
+}
+
+function closeModalFunc() {
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+}
+
+// pega TODOS os cards
+const vagaCards = document.querySelectorAll('.vaga-card');
+
+// adiciona clique em cada um
+vagaCards.forEach(card => {
+    card.addEventListener('click', openModal);
+});
+
+closeModal.addEventListener('click', closeModalFunc);
+overlay.addEventListener('click', closeModalFunc);
+</script>
+
+
 </html>

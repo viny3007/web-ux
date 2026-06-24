@@ -134,6 +134,7 @@ body::before {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(380px,1fr));
     margin-right: 20%;
+    margin-top: 4%;
     margin-left: 1%;
     gap: 25px;
 }
