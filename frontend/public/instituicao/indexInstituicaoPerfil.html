@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba Perfil do Usuário</title>
+    <link rel="stylesheet" href="../styles/perfil.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="header">
+    <div class="menu-container">
+
+        <div class="logo">
+            <img src="../../src/img/logo.png" alt="">
+        </div>
+
+        <nav class="menu">
+            <a href="inicio.html" class="active">Vagas</a>
+            <a href="indexUsuarioRede.html">Rede</a>
+        </nav>
+
+        <div class="acoes">
+            <button class="btn-add" id="btnAdd">
+                +
+            </button>
+
+            <a href="#" class="perfil">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+    </div>
+</header>
+
+<div class="perfil-container">
+  <div class="quadrado-perfil">
+
+    <!-- fundo roxo -->
+    <div class="quadrado-fundo-perfil">
+      <input type="file" id="inputFundo" accept="image/*" style="display:none">
+      <label for="inputFundo" class="foto-fundo-perfil">
+        <i class="bi bi-camera-fill"></i>
+      </label>
+    </div>
+
+    <!-- foto de perfil -->
+    <button class="foto-perfil">
+      <i class="bi bi-person-fill"></i>
+    </button>
+
+    <!-- editar foto de perfil -->
+    <input type="file" id="inputFoto" accept="image/*" style="display:none">
+    <label for="inputFoto" class="edit-foto-perfil">
+      <i class="bi bi-camera-fill"></i>
+    </label>
+
+    <!-- informações -->
+    <div class="nome-perfil">Estudante</div>
+
+    <div class="preferencias-perfil">
+      Preferências:
+      <h1>Possibilidade de efetivação</h1>
+      <h2>Desconto em Produtos</h2>
+      <h3>Vale-transporte</h3>
+      <h4>Vale-refeição/alimentação</h4>
+    </div>
+
+    <div class="informacoes-perfil">Informações sobre Você:</div>
+
+    <div class="editar-perfil">Editar Perfil</div>
+
+    <div class="experiencia-perfil">Experiências:</div>
+
+    <div class="empresa-1">Empresa 1</div>
+
+    <div class="empresa-2">Empresa 2</div>
+
+    <div class="perfil-publico">
+      Perfil público:
+      <label class="toggle purple">
+        <input type="checkbox">
+        <span class="track"><span class="thumb"></span></span>
+      </label>
+    </div>
+
+    <div class="voce-conheca">
+      Talvez você conheça:
+
+      <div class="lista-sugeridos">
+        <div class="usuario-sugerido">
+          <div class="avatar"><i class="bi bi-person-fill"></i></div>
+          <div class="info">
+            <p class="nome">Nome do usuário 1</p>
+            <p class="ultima-msg">Última mensagem...</p>
+          </div>
+        </div>
+
+        <div class="usuario-sugerido">
+          <div class="avatar"><i class="bi bi-person-fill"></i></div>
+          <div class="info">
+            <p class="nome">Nome do usuário 2</p>
+            <p class="ultima-msg">Última mensagem...</p>
+          </div>
+        </div>
+
+        <div class="usuario-sugerido">
+          <div class="avatar"><i class="bi bi-person-fill"></i></div>
+          <div class="info">
+            <p class="nome">Nome do usuário 3</p>
+            <p class="ultima-msg">Última mensagem...</p>
+          </div>
+        </div>
+
+        <div class="usuario-sugerido">
+          <div class="avatar"><i class="bi bi-person-fill"></i></div>
+          <div class="info">
+            <p class="nome">Nome do usuário 4</p>
+            <p class="ultima-msg">Última mensagem...</p>
+          </div>
+        </div>
+
+        <div class="usuario-sugerido">
+          <div class="avatar"><i class="bi bi-person-fill"></i></div>
+          <div class="info">
+            <p class="nome">Nome do usuário 5</p>
+            <p class="ultima-msg">Última mensagem...</p>
+          </div>
+        </div>
+
+        <div class="usuario-sugerido">
+          <div class="avatar"><i class="bi bi-person-fill"></i></div>
+          <div class="info">
+            <p class="nome">Nome do usuário 7</p>
+            <p class="ultima-msg">Última mensagem...</p>
+          </div>
+        </div>
+
+        <div class="usuario-sugerido">
+          <div class="avatar"><i class="bi bi-person-fill"></i></div>
+          <div class="info">
+            <p class="nome">Nome do usuário 8</p>
+            <p class="ultima-msg">Última mensagem...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
