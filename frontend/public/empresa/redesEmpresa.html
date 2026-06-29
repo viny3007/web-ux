@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba Rede do Usuário</title>
+
+     <link rel="stylesheet" href="../../public/styles/usuario.css">
+</head>
+<body>
+    
+ <header class="header">
+        <div class="menu-container">
+
+            <div class="logo">
+                <img src="../../src/img/logo.png" alt="">
+            </div>
+
+            <nav class="menu">
+                <a href="Inicioempresa.html">Vagas</a>
+                <a href="redesEmpresa.html" class="active">Rede</a>
+            </nav>
+
+            <div class="acoes">
+                <button class="btn-add" id="btnAdd">
+                    +
+                </button>
+
+                <a href="#" class="perfil">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- FEED DA REDE -->
+
+        <div class="redesFeed" >
+
+            <!-- Post 1 -->
+            <div class="redesPost1">
+
+                <div class="redesCabecalho">
+                    <img src="https://i.pravatar.cc/150?img=12"
+                        class="redesFotoPerfil">
+
+                    <div class="redesInfoUsuario">
+                        <h3 class="redesNome">João Silva</h3>
+                        <p class="redesTempo">Há 2 horas</p>
+                    </div>
+                </div>
+
+                <div class="redesConteudo">
+                    <p class="redesTexto">
+                        🚀 Acabei de finalizar meu portfólio em HTML, CSS e JavaScript!
+                    </p>
+
+                    <img src="https://picsum.photos/800/450?random=1"
+                        class="redesImagem">
+                </div>
+
+                <div class="redesAcoes">
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-heart"></i> Curtir
+                    </button>
+
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-comment"></i> Comentar
+                    </button>
+
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-share"></i> Compartilhar
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Post 2 -->
+            <div class="redesPost">
+
+                <div class="redesCabecalho">
+                    <img src="https://i.pravatar.cc/150?img=32"
+                        class="redesFotoPerfil">
+
+                    <div class="redesInfoUsuario">
+                        <h3 class="redesNome">Maria Oliveira</h3>
+                        <p class="redesTempo">Há 5 horas</p>
+                    </div>
+                </div>
+
+                <div class="redesConteudo">
+                    <p class="redesTexto">
+                        💼 Alguém conhece vagas para desenvolvedor Front-end?
+                    </p>
+
+                    <img src="https://picsum.photos/800/450?random=2"
+                        class="redesImagem">
+                </div>
+
+                <div class="redesAcoes">
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-heart"></i> Curtir
+                    </button>
+
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-comment"></i> Comentar
+                    </button>
+
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-share"></i> Compartilhar
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Post 3 -->
+            <div class="redesPost">
+
+                <div class="redesCabecalho">
+                    <img src="https://i.pravatar.cc/150?img=45"
+                        class="redesFotoPerfil">
+
+                    <div class="redesInfoUsuario">
+                        <h3 class="redesNome">Carlos Santos</h3>
+                        <p class="redesTempo">Ontem</p>
+                    </div>
+                </div>
+
+                <div class="redesConteudo">
+                    <p class="redesTexto">
+                        📚 Estudando React e Node.js para me tornar Full Stack.
+                    </p>
+
+                    <img src="https://picsum.photos/800/450?random=3"
+                        class="redesImagem">
+                </div>
+
+                <div class="redesAcoes">
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-heart"></i> Curtir
+                    </button>
+
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-comment"></i> Comentar
+                    </button>
+
+                    <button class="redesBotao">
+                        <i class="fa-solid fa-share"></i> Compartilhar
+                    </button>
+                </div>
+
+            </div>
+<aside class="sidebar-perfil">
+
+    <div class="sidebar-perfil__banner"></div>
+
+    <img src="../../src/img/pichauLogo.jpg" class="sidebar-perfil__foto">
+
+    <div class="sidebar-perfil__info">
+        <h2>João Silva</h2>
+
+        <p>
+            Técnico de TI formado na
+            UniSociesc Centro Universitário
+        </p>
+
+        <span>Joinville, SC</span>
+    </div>
+
+    <div class="sidebar-perfil__status">
+
+        <div class="sidebar-perfil__status-item">
+            <strong>85%</strong>
+            <span>Perfil Completo</span>
+        </div>
+
+        <div class="sidebar-perfil__status-item">
+            <strong>12</strong>
+            <span>Candidaturas</span>
+        </div>
+
+        <div class="sidebar-perfil__status-item">
+            <strong>5</strong>
+            <span>Vagas Salvas</span>
+        </div>
+
+    </div>
+
+     <button class="btn-perfil" onclick="window.location.href='perfilempresa.html'">
+            Ver Perfil Completo
+        </button>
+
+</aside>
+        </div>
+
+<!-- POPUP MENU -->
+<div class="popup-menu" id="popupMenu">
+    <button class="popup-item">
+        ➕ Nova Publicação
+    </button>
+
+    <button class="popup-item">
+        ✏️ Atualizar Currículo
+    </button>
+
+    <button class="popup-item">
+        📄 Adicionar Certificado
+    </button>
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- MODAL -->
+<div class="modal" id="modalVaga">
+    <div class="modal-content">
+        
+        <button class="close-modal" id="closeModal">×</button>
+
+        <div class="modal-header">
+            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Pichau" alt="Empresa">
+            
+            <div>
+                <h2>Estágio em Desenvolvimento Front-End</h2>
+                <p>Pichau • Joinville, SC</p>
+            </div>
+        </div>
+
+        <div class="modal-body">
+            <h3>Benefícios</h3>
+            <ul>
+                <li>Efetivação</li>
+                <li>Vale Transporte</li>
+                <li>Vale Refeição</li>
+                <li>Desconto em Produtos</li>
+            </ul>
+
+            <p>
+                Aqui você pode colocar uma descrição maior da vaga, requisitos e informações adicionais.
+            </p>
+        </div>
+
+        <button class="btn-candidatar-modal">
+            Candidatar-se
+        </button>
+
+    </div>
+</div>
+
+</body>
+
+<script>
+const btnAdd = document.getElementById("btnAdd");
+const popup = document.getElementById("popupMenu");
+
+// abre/fecha popup
+btnAdd.addEventListener("click", (e) => {
+    e.stopPropagation();
+    popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+});
+
+// fecha ao clicar fora
+document.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+
+
+</script>
+
+<script>
+const modal = document.getElementById('modalVaga');
+const overlay = document.getElementById('overlay');
+const closeModal = document.getElementById('closeModal');
+
+function openModal() {
+    modal.classList.add('active');
+    overlay.classList.add('active');
+}
+
+function closeModalFunc() {
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+}
+
+// pega TODOS os cards
+const vagaCards = document.querySelectorAll('.vaga-card');
+
+// adiciona clique em cada um
+vagaCards.forEach(card => {
+    card.addEventListener('click', openModal);
+});
+
+closeModal.addEventListener('click', closeModalFunc);
+overlay.addEventListener('click', closeModalFunc);
+</script>
+
+</html>
