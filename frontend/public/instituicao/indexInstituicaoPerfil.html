@@ -150,42 +150,6 @@
   </div>
 </div>
 
-<!-- POPUP MENU -->
-<div class="popup-menu" id="popupMenu">
-    <button class="popup-item">
-        ➕ Nova Publicação
-    </button>
-
-    <button class="popup-item">
-        ✏️ Atualizar Banco de Talentos
-    </button>
-
-    <button class="popup-item">
-        📄 Adicionar Banco de Talentos
-    </button>
-</div>
-
-<!-- OVERLAY -->
-<div class="overlay" id="overlay"></div>
-
-</body>
-
-<script>
-const btnAdd = document.getElementById("btnAdd");
-const popup = document.getElementById("popupMenu");
-
-// abre/fecha popup
-btnAdd.addEventListener("click", (e) => {
-    e.stopPropagation();
-    popup.style.display = popup.style.display === "flex" ? "none" : "flex";
-});
-
-// fecha ao clicar fora
-document.addEventListener("click", () => {
-    popup.style.display = "none";
-});
-
-
 
 </script>
 
