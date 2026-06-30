@@ -194,6 +194,57 @@
     </div>
   </div>
 
+   <!-- ================= CHAT ================= -->
+
+  <button class="chat-btn" id="chatBtn">
+    💬
+    <span class="chat-notificacao">3</span>
+  </button>
+
+  <div class="chat-popup" id="chatPopup">
+
+    <div class="chat-header">
+      <h3>Mensagens</h3>
+      <button id="fecharChat">✕</button>
+    </div>
+
+    <div class="chat-pesquisa">
+      <input type="text" placeholder="Pesquisar conversa...">
+    </div>
+
+    <div class="chat-lista">
+
+      <div class="chat-item">
+        <img src="https://api.dicebear.com/9.x/initials/svg?seed=Candidato1">
+        <div>
+          <strong>Candidato 1</strong>
+          <p>Olá! Tenho interesse na vaga.</p>
+        </div>
+        <span>09:42</span>
+      </div>
+
+      <div class="chat-item">
+        <img src="https://api.dicebear.com/9.x/initials/svg?seed=Univille">
+        <div>
+          <strong>Univille</strong>
+          <p>Vamos fechar a parceria deste semestre.</p>
+        </div>
+        <span>Ontem</span>
+      </div>
+
+      <div class="chat-item">
+        <img src="https://api.dicebear.com/9.x/initials/svg?seed=Candidato2">
+        <div>
+          <strong>Candidato 2</strong>
+          <p>Obrigado pela oportunidade!</p>
+        </div>
+        <span>Seg</span>
+      </div>
+
+    </div>
+
+  </div>
+
   <script>
     // ===================== FOTO DE PERFIL =====================
     document.getElementById('inputFoto').addEventListener('change', function (e) {
@@ -367,6 +418,26 @@
 
       fecharModal();
     }
+
+    // ===================== CHAT =====================
+    const chatBtn = document.getElementById("chatBtn");
+    const chatPopup = document.getElementById("chatPopup");
+    const fecharChat = document.getElementById("fecharChat");
+
+    chatBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      chatPopup.classList.toggle("active");
+    });
+
+    fecharChat.addEventListener("click", () => {
+      chatPopup.classList.remove("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!chatPopup.contains(e.target) && !chatBtn.contains(e.target)) {
+        chatPopup.classList.remove("active");
+      }
+    });
   </script>
 </body>
 
