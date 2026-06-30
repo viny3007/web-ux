@@ -641,6 +641,221 @@ body::before {
     cursor: pointer;
     font-weight: 600;
 }
+
+/*================ CHAT =================*/
+
+.chat-btn{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+
+    width:65px;
+    height:65px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#6c63ff,#5146e5);
+
+    color:#fff;
+    font-size:28px;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    z-index:3000;
+
+    transition:.3s;
+}
+
+.chat-btn:hover{
+    transform:scale(1.08);
+}
+
+.chat-notificacao{
+
+    position:absolute;
+
+    top:-5px;
+    right:-5px;
+
+    width:24px;
+    height:24px;
+
+    background:#ff3b3b;
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:12px;
+    font-weight:bold;
+
+}
+
+.chat-popup{
+
+    position:fixed;
+
+    right:30px;
+    bottom:110px;
+
+    width:360px;
+    height:500px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+
+    overflow:hidden;
+
+    transform:translateY(40px);
+    opacity:0;
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:3000;
+
+}
+
+.chat-popup.active{
+
+    transform:translateY(0);
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+.chat-header{
+
+    background:linear-gradient(135deg,#6c63ff,#5146e5);
+
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px;
+
+}
+
+.chat-header h3{
+    margin:0;
+    font-size:18px;
+}
+
+.chat-header button{
+
+    background:none;
+    border:none;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+.chat-pesquisa{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.chat-pesquisa input{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    outline:none;
+
+    box-sizing:border-box;
+
+}
+
+.chat-lista{
+
+    overflow-y:auto;
+
+    height:380px;
+
+}
+
+.chat-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.chat-item:hover{
+
+    background:#f4f5ff;
+
+}
+
+.chat-item img{
+
+    width:52px;
+    height:52px;
+
+    border-radius:50%;
+
+}
+
+.chat-item div{
+
+    flex:1;
+
+}
+
+.chat-item strong{
+
+    display:block;
+    color:#222;
+
+}
+
+.chat-item p{
+
+    margin:4px 0 0;
+    color:#666;
+    font-size:13px;
+
+}
+
+.chat-item span{
+
+    font-size:12px;
+    color:#999;
+
+}
 /*===============================Usuário Perfil=================================*/
 
 .perfil-container {
@@ -1008,4 +1223,4 @@ h4 {
     background: #28a745;
     color: white;
     border-radius: 0 0 12px 12px;
-    cursor: pointer;
+    cursor: pointer;}

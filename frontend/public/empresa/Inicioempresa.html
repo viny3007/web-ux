@@ -68,8 +68,8 @@
                 <span>Desconto em Produtos</span>
             </div>
 
-            <button class="btn-candidatar" onclick="window.location.href='hub.html'">
-                Candidatar-se
+            <button class="btn-candidatar"">
+                Seu anuncio
             </button>
         </div>
 
@@ -97,7 +97,7 @@
             </div>
 
             <button class="btn-candidatar" onclick="window.location.href='hub.html'">
-                Candidatar-se
+                Seu anuncio
             </button>
         </div>
 
@@ -153,7 +153,7 @@
             </div>
 
             <button class="btn-candidatar" onclick="window.location.href='hub.html'">
-                Candidatar-se
+                Seu anuncio
             </button>
         </div>
     </section>
@@ -252,6 +252,63 @@
     </div>
 </div>
 
+<!-- ================= CHAT ================= -->
+
+<button class="chat-btn" id="chatBtn">
+    💬
+    <span class="chat-notificacao">3</span>
+</button>
+
+<div class="chat-popup" id="chatPopup">
+
+    <div class="chat-header">
+        <h3>Mensagens</h3>
+        <button id="fecharChat">✕</button>
+    </div>
+
+    <div class="chat-pesquisa">
+        <input type="text" placeholder="Pesquisar conversa...">
+    </div>
+
+    <div class="chat-lista">
+
+        <div class="chat-item">
+            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Pichau">
+
+            <div>
+                <strong>Pichau</strong>
+                <p>Olá! Recebemos seu currículo.</p>
+            </div>
+
+            <span>09:42</span>
+        </div>
+
+        <div class="chat-item">
+            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Google">
+
+            <div>
+                <strong>Google</strong>
+                <p>Seu processo foi atualizado.</p>
+            </div>
+
+            <span>Ontem</span>
+        </div>
+
+        <div class="chat-item">
+            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Microsoft">
+
+            <div>
+                <strong>Microsoft</strong>
+                <p>Obrigado por participar.</p>
+            </div>
+
+            <span>Seg</span>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 
 <script>
@@ -298,6 +355,37 @@ vagaCards.forEach(card => {
 
 closeModal.addEventListener('click', closeModalFunc);
 overlay.addEventListener('click', closeModalFunc);
+</script>
+
+<script>    
+    const chatBtn = document.getElementById("chatBtn");
+const chatPopup = document.getElementById("chatPopup");
+const fecharChat = document.getElementById("fecharChat");
+
+chatBtn.addEventListener("click", (e)=>{
+
+    e.stopPropagation();
+
+    chatPopup.classList.toggle("active");
+
+});
+
+fecharChat.addEventListener("click", ()=>{
+
+    chatPopup.classList.remove("active");
+
+});
+
+document.addEventListener("click",(e)=>{
+
+    if(
+        !chatPopup.contains(e.target) &&
+        !chatBtn.contains(e.target)
+    ){
+        chatPopup.classList.remove("active");
+    }
+
+});
 </script>
 
 </html>
