@@ -1,243 +1,326 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aba Perfil do Usuário</title>
     <link rel="stylesheet" href="../styles/perfil.css">
-    <link rel="stylesheet" href="../styles/empresa/empresa.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <header class="header">
+  <header class="header">
     <div class="menu-container">
 
-        <div class="logo">
-            <img src="../../src/img/logo.png" alt="">
-        </div>
+      <div class="logo">
+        <img src="../../src/img/logo.png" alt="">
+      </div>
 
-        <nav class="menu">
-            <a href="inicio.html" class="active">Vagas</a>
-            <a href="indexUsuarioRede.html">Rede</a>
-        </nav>
+      <nav class="menu">
+        <a href="inicio.html" class="active">Vagas</a>
+        <a href="indexUsuarioRede.html">Rede</a>
+      </nav>
 
-        <div class="acoes">
-            <button class="btn-add" id="btnAdd">
-                +
-            </button>
+      <div class="acoes">
+        <button class="btn-add" id="btnAdd">
+          +
+        </button>
 
-            <a href="#" class="perfil">
-                <i class="fas fa-user"></i>
-            </a>
-        </div>
-
-    </div>
-</header>
-
-<div class="perfil-container">
-  <div class="quadrado-perfil">
-
-    <!-- fundo roxo -->
-    <div class="quadrado-fundo-perfil">
-      <input type="file" id="inputFundo" accept="image/*" style="display:none">
-      <label for="inputFundo" class="foto-fundo-perfil">
-        <i class="bi bi-camera-fill"></i>
-      </label>
-    </div>
-
-    <!-- foto de perfil -->
-    <button class="foto-perfil">
-      <i class="bi bi-person-fill"></i>
-    </button>
-
-    <!-- editar foto de perfil -->
-    <input type="file" id="inputFoto" accept="image/*" style="display:none">
-    <label for="inputFoto" class="edit-foto-perfil">
-      <i class="bi bi-camera-fill"></i>
-    </label>
-
-    <!-- informações -->
-    <div class="nome-perfil">Estudante</div>
-
-    <div class="preferencias-perfil">
-      Preferências:
-      <h1>Possibilidade de efetivação</h1>
-      <h2>Desconto em Produtos</h2>
-      <h3>Vale-transporte</h3>
-      <h4>Vale-refeição/alimentação</h4>
-    </div>
-
-    <div class="informacoes-perfil">Informações sobre Você:</div>
-
-    <div class="editar-perfil">Editar Perfil</div>
-
-    <div class="experiencia-perfil">Experiências:</div>
-
-    <div class="empresa-1">Empresa 1</div>
-
-    <div class="empresa-2">Empresa 2</div>
-
-    <div class="perfil-publico">
-      Perfil público:
-      <label class="toggle purple">
-        <input type="checkbox">
-        <span class="track"><span class="thumb"></span></span>
-      </label>
-    </div>
-
-    <div class="voce-conheca">
-      Talvez você conheça:
-
-      <div class="lista-sugeridos">
-        <div class="usuario-sugerido">
-          <div class="avatar"><i class="bi bi-person-fill"></i></div>
-          <div class="info">
-            <p class="nome">Nome do usuário 1</p>
-            <p class="ultima-msg">Última mensagem...</p>
-          </div>
-        </div>
-
-        <div class="usuario-sugerido">
-          <div class="avatar"><i class="bi bi-person-fill"></i></div>
-          <div class="info">
-            <p class="nome">Nome do usuário 2</p>
-            <p class="ultima-msg">Última mensagem...</p>
-          </div>
-        </div>
-
-        <div class="usuario-sugerido">
-          <div class="avatar"><i class="bi bi-person-fill"></i></div>
-          <div class="info">
-            <p class="nome">Nome do usuário 3</p>
-            <p class="ultima-msg">Última mensagem...</p>
-          </div>
-        </div>
-
-        <div class="usuario-sugerido">
-          <div class="avatar"><i class="bi bi-person-fill"></i></div>
-          <div class="info">
-            <p class="nome">Nome do usuário 4</p>
-            <p class="ultima-msg">Última mensagem...</p>
-          </div>
-        </div>
-
-        <div class="usuario-sugerido">
-          <div class="avatar"><i class="bi bi-person-fill"></i></div>
-          <div class="info">
-            <p class="nome">Nome do usuário 5</p>
-            <p class="ultima-msg">Última mensagem...</p>
-          </div>
-        </div>
-
-        <div class="usuario-sugerido">
-          <div class="avatar"><i class="bi bi-person-fill"></i></div>
-          <div class="info">
-            <p class="nome">Nome do usuário 7</p>
-            <p class="ultima-msg">Última mensagem...</p>
-          </div>
-        </div>
-
-        <div class="usuario-sugerido">
-          <div class="avatar"><i class="bi bi-person-fill"></i></div>
-          <div class="info">
-            <p class="nome">Nome do usuário 8</p>
-            <p class="ultima-msg">Última mensagem...</p>
-          </div>
-        </div>
+        <a href="#" class="perfil">
+          <i class="fas fa-user"></i>
+        </a>
       </div>
 
     </div>
+  </header>
+
+  <div class="perfil-container">
+    <div class="quadrado-perfil">
+
+      <!-- fundo roxo -->
+      <div class="quadrado-fundo-perfil">
+        <input type="file" id="inputFundo" accept="image/*" style="display:none">
+        <label for="inputFundo" class="foto-fundo-perfil">
+          <i class="bi bi-camera-fill"></i>
+        </label>
+      </div>
+
+      <!-- foto de perfil -->
+      <button class="foto-perfil">
+        <i class="bi bi-person-fill"></i>
+      </button>
+
+      <!-- editar foto de perfil -->
+      <input type="file" id="inputFoto" accept="image/*" style="display:none">
+      <label for="inputFoto" class="edit-foto-perfil">
+        <i class="bi bi-camera-fill"></i>
+      </label>
+
+      <!-- informações -->
+      <div class="nome-perfil">Estudante</div>
+
+      <div class="preferencias-perfil">
+        Preferências:
+        <h1>Possibilidade de efetivação</h1>
+        <h2>Desconto em Produtos</h2>
+        <h3>Vale-transporte</h3>
+        <h4>Vale-refeição/alimentação</h4>
+      </div>
+
+      <div class="informacoes-perfil">Informações sobre Você:</div>
+
+      <!-- Botão editar (já existente, adicionar onclick) -->
+      <div class="editar-perfil" onclick="abrirModal()">Editar Perfil</div>
+
+      <div class="experiencia-perfil">Experiências:</div>
+
+      <div class="empresa-1">Empresa 1</div>
+
+      <div class="empresa-2">Empresa 2</div>
+
+      <div class="perfil-publico">
+        Perfil público:
+        <label class="toggle purple">
+          <input type="checkbox">
+          <span class="track"><span class="thumb"></span></span>
+        </label>
+      </div>
+
+      <div class="voce-conheca">
+        Talvez você conheça:
+
+        <div class="lista-sugeridos">
+          <div class="usuario-sugerido">
+            <div class="avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="info">
+              <p class="nome">Nome do usuário 1</p>
+              <p class="ultima-msg">Última mensagem...</p>
+            </div>
+          </div>
+
+          <div class="usuario-sugerido">
+            <div class="avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="info">
+              <p class="nome">Nome do usuário 2</p>
+              <p class="ultima-msg">Última mensagem...</p>
+            </div>
+          </div>
+
+          <div class="usuario-sugerido">
+            <div class="avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="info">
+              <p class="nome">Nome do usuário 3</p>
+              <p class="ultima-msg">Última mensagem...</p>
+            </div>
+          </div>
+
+          <div class="usuario-sugerido">
+            <div class="avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="info">
+              <p class="nome">Nome do usuário 4</p>
+              <p class="ultima-msg">Última mensagem...</p>
+            </div>
+          </div>
+
+          <div class="usuario-sugerido">
+            <div class="avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="info">
+              <p class="nome">Nome do usuário 5</p>
+              <p class="ultima-msg">Última mensagem...</p>
+            </div>
+          </div>
+
+          <div class="usuario-sugerido">
+            <div class="avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="info">
+              <p class="nome">Nome do usuário 7</p>
+              <p class="ultima-msg">Última mensagem...</p>
+            </div>
+          </div>
+
+          <div class="usuario-sugerido">
+            <div class="avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="info">
+              <p class="nome">Nome do usuário 8</p>
+              <p class="ultima-msg">Última mensagem...</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
   </div>
 </div>
 
-<!-- ================= CHAT ================= -->
+  <!-- MODAL -->
+  <div class="overlay" id="overlay">
+    <div class="modal-perfil">
+      <div class="modal-header">
+        <h2>Editar perfil</h2>
+        <button class="modal-close" onclick="fecharModal()">X</button>
+      </div>
+      <div class="modal-body">
 
-<button class="chat-btn" id="chatBtn">
-    💬
-    <span class="chat-notificacao">3</span>
-</button>
+        <label>Nome</label>
+        <input type="text" id="editNome">
 
-<div class="chat-popup" id="chatPopup">
-
-    <div class="chat-header">
-        <h3>Mensagens</h3>
-        <button id="fecharChat">✕</button>
-    </div>
-
-    <div class="chat-pesquisa">
-        <input type="text" placeholder="Pesquisar conversa...">
-    </div>
-
-    <div class="chat-lista">
-
-        <div class="chat-item">
-            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Pichau">
-
-            <div>
-                <strong>Pichau</strong>
-                <p>Olá! Recebemos seu currículo.</p>
-            </div>
-
-            <span>09:42</span>
+        <hr>
+        <p><strong>Preferências</strong></p>
+        <div id="editTags"></div>
+        <div class="add-row">
+          <input type="text" id="novaTag" placeholder="Nova preferência...">
+          <button class="btn-add-item" onclick="adicionarTag()">Adicionar</button>
         </div>
 
-        <div class="chat-item">
-            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Google">
+        <hr>
+        <label>Informações sobre você</label>
+        <textarea id="editInfo" rows="4" placeholder="Fale sobre você..."></textarea>
 
-            <div>
-                <strong>Google</strong>
-                <p>Seu processo foi atualizado.</p>
-            </div>
+        <hr>
+        <p><strong>Experiências</strong></p>
+        <div id="editExpList"></div>
+        <input type="text" id="empNome" placeholder="Empresa">
+        <input type="text" id="empCargo" placeholder="Cargo">
+        <input type="month" id="empInicio">
+        <input type="month" id="empFim">
+        <button class="btn-add-item" onclick="adicionarExp()">+ Adicionar empresa</button>
 
-            <span>Ontem</span>
-        </div>
-
-        <div class="chat-item">
-            <img src="https://api.dicebear.com/9.x/initials/svg?seed=Microsoft">
-
-            <div>
-                <strong>Microsoft</strong>
-                <p>Obrigado por participar.</p>
-            </div>
-
-            <span>Seg</span>
-        </div>
-
+      </div>
+      <div class="modal-footer">
+        <button class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+        <button class="btn-salvar" onclick="salvar()">Salvar</button>
+      </div>
     </div>
+  </div>
 
-</div>
+  <script>
+    // ===================== FOTO DE PERFIL =====================
+    document.getElementById('inputFoto').addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const url = URL.createObjectURL(file);
+      const fotoPerfil = document.querySelector('.foto-perfil');
+      fotoPerfil.innerHTML = `<img src="${url}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`;
+    });
 
-</body>
+    // ===================== FOTO DE FUNDO =====================
+    document.getElementById('inputFundo').addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const url = URL.createObjectURL(file);
+      const fundo = document.querySelector('.quadrado-fundo-perfil');
+      fundo.style.backgroundImage = `url('${url}')`;
+      fundo.style.backgroundSize = 'cover';
+      fundo.style.backgroundPosition = 'center';
+    });
 
-<script>
-  const chatBtn = document.getElementById("chatBtn");
-const chatPopup = document.getElementById("chatPopup");
-const fecharChat = document.getElementById("fecharChat");
+    // ===================== DADOS DO PERFIL =====================
+    let prefs = ['Possibilidade de efetivação', 'Desconto em Produtos', 'Vale-transporte', 'Vale-refeição/alimentação'];
+    let info = '';
+    let exps = [];
 
-chatBtn.addEventListener("click", (e)=>{
-
-    e.stopPropagation();
-
-    chatPopup.classList.toggle("active");
-
-});
-
-fecharChat.addEventListener("click", ()=>{
-
-    chatPopup.classList.remove("active");
-
-});
-
-document.addEventListener("click",(e)=>{
-
-    if(
-        !chatPopup.contains(e.target) &&
-        !chatBtn.contains(e.target)
-    ){
-        chatPopup.classList.remove("active");
+    // ===================== MODAL =====================
+    function abrirModal() {
+      document.getElementById('editNome').value = document.querySelector('.nome-perfil').textContent.trim();
+      document.getElementById('editInfo').value = info;
+      renderEditTags();
+      renderEditExps();
+      document.getElementById('overlay').style.display = 'flex';
     }
 
-});
-</script>
+    function fecharModal() {
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // fecha ao clicar fora do modal
+    document.getElementById('overlay').addEventListener('click', function (e) {
+      if (e.target === this) fecharModal();
+    });
+
+    // ===================== PREFERÊNCIAS =====================
+    function renderEditTags() {
+      document.getElementById('editTags').innerHTML = prefs.map((p, i) =>
+        `<span class="tag-edit">${p} <button class="rm-tag" onclick="rmTag(${i})">×</button></span>`
+      ).join('');
+    }
+
+    function rmTag(i) {
+      prefs.splice(i, 1);
+      renderEditTags();
+    }
+
+    function adicionarTag() {
+      const v = document.getElementById('novaTag').value.trim();
+      if (!v) return;
+      prefs.push(v);
+      document.getElementById('novaTag').value = '';
+      renderEditTags();
+    }
+
+    document.getElementById('novaTag').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') adicionarTag();
+    });
+
+    // ===================== EXPERIÊNCIAS =====================
+    function fmtMes(val) {
+      if (!val) return 'Atual';
+      const [y, m] = val.split('-');
+      return m + '/' + y;
+    }
+
+    function renderEditExps() {
+      const c = document.getElementById('editExpList');
+      if (!exps.length) {
+        c.innerHTML = '<p style="color:#888;font-size:13px">Nenhuma empresa adicionada ainda.</p>';
+        return;
+      }
+      c.innerHTML = exps.map((e, i) =>
+        `<div class="exp-edit-item">
+        <div>
+          <strong>${e.empresa}</strong><br>
+          <span>${e.cargo}</span><br>
+          <span style="font-size:12px;color:#888">${fmtMes(e.inicio)} – ${fmtMes(e.fim)}</span>
+        </div>
+        <button class="rm-tag" onclick="rmExp(${i})">×</button>
+      </div>`
+      ).join('');
+    }
+
+    function rmExp(i) {
+      exps.splice(i, 1);
+      renderEditExps();
+    }
+
+    function adicionarExp() {
+      const empresa = document.getElementById('empNome').value.trim();
+      const cargo = document.getElementById('empCargo').value.trim();
+      if (!empresa || !cargo) {
+        alert('Preencha ao menos o nome da empresa e o cargo.');
+        return;
+      }
+      exps.push({
+        empresa,
+        cargo,
+        inicio: document.getElementById('empInicio').value,
+        fim: document.getElementById('empFim').value
+      });
+      ['empNome', 'empCargo', 'empInicio', 'empFim'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      renderEditExps();
+    }
+
+    // ===================== SALVAR =====================
+    function salvar() {
+      const novoNome = document.getElementById('editNome').value.trim();
+      if (novoNome) document.querySelector('.nome-perfil').textContent = novoNome;
+
+      info = document.getElementById('editInfo').value;
+      document.querySelector('.informacoes-perfil').textContent = info || 'Informações sobre Você:';
+
+      fecharModal();
+    }
+  </script>
+</body>
 </html>
