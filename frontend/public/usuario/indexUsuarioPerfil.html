@@ -2,11 +2,11 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aba Perfil do Usuário</title>
-    <link rel="stylesheet" href="../styles/perfil.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aba Perfil do Usuário</title>
+  <link rel="stylesheet" href="../styles/perfil.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -36,6 +36,8 @@
   </header>
 
   <div class="perfil-container">
+
+    <!-- ===================== CARD PRINCIPAL ===================== -->
     <div class="quadrado-perfil">
 
       <!-- fundo roxo -->
@@ -61,23 +63,20 @@
       <div class="nome-perfil">Estudante</div>
 
       <div class="preferencias-perfil">
-        Preferências:
-        <h1>Possibilidade de efetivação</h1>
-        <h2>Desconto em Produtos</h2>
-        <h3>Vale-transporte</h3>
-        <h4>Vale-refeição/alimentação</h4>
+       Preferências:
       </div>
 
       <div class="informacoes-perfil">Informações sobre Você:</div>
 
-      <!-- Botão editar (já existente, adicionar onclick) -->
+      <!-- Botão editar -->
       <div class="editar-perfil" onclick="abrirModal()">Editar Perfil</div>
 
       <div class="experiencia-perfil">Experiências:</div>
 
-      <div class="empresa-1">Empresa 1</div>
+    </div>
 
-      <div class="empresa-2">Empresa 2</div>
+    <!-- ===================== SIDEBAR (alinhada ao topo do card) ===================== -->
+    <div class="perfil-sidebar">
 
       <div class="perfil-publico">
         Perfil público:
@@ -150,8 +149,9 @@
 
       </div>
 
+    </div>
+
   </div>
-</div>
 
   <!-- MODAL -->
   <div class="overlay" id="overlay">
@@ -216,9 +216,47 @@
     });
 
     // ===================== DADOS DO PERFIL =====================
-    let prefs = ['Possibilidade de efetivação', 'Desconto em Produtos', 'Vale-transporte', 'Vale-refeição/alimentação'];
+    let prefs = ['Possibilidade de efetivação', 'Desconto em Produtos', 'Vale-transporte', 'Vale-refeição/alimentação', 'pão de queijo'];
     let info = '';
     let exps = [];
+
+    // ===================== EXIBIÇÃO NO CARD PRINCIPAL =====================
+    // Estas duas funções atualizam o card de perfil imediatamente,
+    // sem depender do botão "Salvar" do modal.
+    function renderPrefsDisplay() {
+      const prefContainer = document.querySelector('.preferencias-perfil');
+      prefContainer.innerHTML = 'Preferências:<br>' + prefs.map(p =>
+        `<span style="display:inline-block;background:#b7b0e8;padding:6px 10px;border-radius:15px;font-size:12px;font-weight:bold;margin:3px">${p}</span>`
+      ).join('');
+    }
+
+    function renderExpDisplay() {
+      const expContainer = document.querySelector('.experiencia-perfil');
+      expContainer.innerHTML = 'Experiências:';
+      if (exps.length) {
+        exps.forEach(e => {
+          expContainer.innerHTML += `
+        <div style="margin-top:10px;font-size:12px;background:#fff;border-radius:8px;padding:8px">
+          <strong>${e.empresa}</strong><br>
+          <span>${e.cargo}</span><br>
+          <span style="color:#555;font-size:11px">${fmtMes(e.inicio)} – ${fmtMes(e.fim)}</span>
+        </div>`;
+        });
+      } else {
+        expContainer.innerHTML += '<div style="margin-top:8px;font-size:12px;color:#3a3a3a">Nenhuma experiência cadastrada ainda.</div>';
+      }
+    }
+
+    function renderInfoDisplay() {
+      const infoContainer = document.querySelector('.informacoes-perfil');
+      infoContainer.innerHTML = 'Informações sobre Você:' +
+        (info ? `<div style="margin-top:8px;font-weight:normal;">${info}</div>` : '');
+    }
+
+    // exibe a amostra de preferências e o estado das experiências assim que a página carrega
+    renderPrefsDisplay();
+    renderExpDisplay();
+    renderInfoDisplay();
 
     // ===================== MODAL =====================
     function abrirModal() {
@@ -290,6 +328,7 @@
     function rmExp(i) {
       exps.splice(i, 1);
       renderEditExps();
+      renderExpDisplay();
     }
 
     function adicionarExp() {
@@ -309,18 +348,26 @@
         document.getElementById(id).value = '';
       });
       renderEditExps();
+      renderExpDisplay();
     }
 
     // ===================== SALVAR =====================
     function salvar() {
+      // atualiza nome
       const novoNome = document.getElementById('editNome').value.trim();
       if (novoNome) document.querySelector('.nome-perfil').textContent = novoNome;
 
+      // atualiza informações
       info = document.getElementById('editInfo').value;
-      document.querySelector('.informacoes-perfil').textContent = info || 'Informações sobre Você:';
+      renderInfoDisplay();
+
+      // atualiza preferências e experiências no card principal
+      renderPrefsDisplay();
+      renderExpDisplay();
 
       fecharModal();
     }
   </script>
 </body>
+
 </html>
